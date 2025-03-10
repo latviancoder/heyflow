@@ -1,0 +1,10 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #fff;
+  border-left: 1px #bbb solid;
+  padding: 1rem;
+}

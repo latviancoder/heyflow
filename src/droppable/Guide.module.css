@@ -1,0 +1,36 @@
+.footer {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px darkblue dashed;
+  border-radius: 1rem;
+}
+
+.between {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: darkblue;
+
+  &.isOver {
+    background-color: transparent;
+  }
+
+  &.isOver:after {
+    content: '';
+    top: -1rem;
+    right: 1rem;
+    left: 1rem;
+    position: absolute;
+    padding: 1rem;
+    border: 2px darkblue dashed;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    background-color: #eee;
+  }
+}
+
+.isOver {
+  background-color: #eee;
+}

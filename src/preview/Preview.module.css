@@ -1,0 +1,9 @@
+.container {
+  border: 1px #ddd solid;
+  padding: 1rem;
+  display: flex;
+}
+
+.preview {
+  padding: 1rem;
+}

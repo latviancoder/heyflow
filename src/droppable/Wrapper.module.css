@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px #bbb solid;
+  cursor: pointer;
+
+  &.hasParent {
+    border-left: 1px #bbb solid;
+    border-right: 1px #bbb solid;
+
+    &:first-of-type {
+      border-top: 1px #bbb solid;
+      margin-top: 1rem;
+    }
+  }
+
+  &.isSelected {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px blue solid;
+    }
+  }
+}
+
+.wrapperInner {
+  &.hasChildren {
+    padding-bottom: 1rem;
+  }
+}
